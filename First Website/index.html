@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samyak's First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>First Website</h1>
+        This is my first website. Myself Samyak, B.Tech 1st year student in Dr. Akhilesh Das Institute of Professional
+        Studies located at Shastri Nagar in Delhi.
+    </div>
+    <div>
+        <h2>Photo</h2>
+    </div>
+    <img width="500" height="250" src="Train image.png" alt="Train Image">
+    </div>
+    <div>
+        <h2>Table</h2>
+        <table>
+            <caption><b>Student's Details</b></caption>
+            <!-- <thead>----------------------------------------------------------------------------------------------</thead> -->
+            <tbody>
+                <tr>
+                    <th class="yellow">Name</th>
+                    <th class="yellow">Branch</th>
+                    <th class="yellow">Year</th>
+                </tr>
+                <tr>
+                    <td>Samyak</td>
+                    <td>AIML</td>
+                    <td>1st</td>
+                </tr>
+                <tr>
+                    <td>Riyanshi</td>
+                    <td>BioTech</td>
+                    <td>2nd</td>
+                </tr>
+                <tr>
+                    <td>Mishti</td>
+                    <td colspan="2">Class 11</td>
+                </tr>
+        </table>
+        </tbody>
+        <!-- <tfoot>----------------------------------------------------------------------------------------------</tfoot> -->
+        <!-- <script src="script.js" ></script>     -->
+        <h2>HTML Definition List</h2>
+        <dl>
+            <dt><b>HTML</b></dt>
+            <dd><i>Hyper Text Markup Language: The standard language for creating web</i></dd>
+            <dt><b>CSS</b></dt>
+            <dd><i>Cascading Style Sheets: A stylesheet language used for describing the look and formating of a
+                    document
+                    written in HTML.</dd></i>
+            <dt><b>Java Script</b></dt>
+            <dd><i>A programming language commonly used in web development to add interactive features.</i></dd>
+        </dl>
+        <h2>Form </h2>
+        <div>
+            <form action="post">
+            <label for="username"><b>Username : </b></label>
+            <input type="text" id="username" name="username" required placeholder="Enter your Username">
+        </div>
+        <div>
+            <label for="gender"><b>Gender : </b></label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="language"><b>Languages : </b></label>
+            <input type="checkbox" id="cpp" name="language" value="yes">
+            <label for="cpp">C++</label>
+            <input type="checkbox" id="c#" name="language" value="yes">
+            <label for="c#">C#</label>
+            <input type="checkbox" id="html" name="language" value="yes">
+            <label for="html">HTML</label>
+        </div>
+
+        <div>
+            <label for="fruits"><b>Favourite Fruit : </b></label>
+            <select name="fruits" id="fruits">
+                <option value="None">None</option>
+                <option value="Mango">Mango</option>
+                <option value="Orange">Orange</option>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Watermelon">Watermelon</option>
+            </select>
+        </div>
+        <div>
+            <label for="city"><b>City : </b></label>
+            <input type="text" name="city" id="city" placeholder="Locality ( not state )">
+        </div>
+        <div>
+            <label for="pin"><b>Pincode :</b></label>
+            <input type="number" name="pin" id="pin" placeholder="State pincode">
+        </div>
+        <div>
+            <label for="feedback"><b>Enter your feedback : </b></label><br>
+            <textarea name="feedback" id="feedback" rows="4" cols="75"
+                placeholder="Example : what the heck is wrong with your website?"></textarea>
+        </div>
+        </form>
+        <div>
+            <h2>Video</h2>
+        </div>
+        <div>
+            <video src="video2.mp4" height="300" controls loop muted poster="Train image.png"></video>
+
+        </div>
+        <div><audio src="Train sound.mp3" controls loop></audio></div>
+    </div>
+    <div>
+        <h2>Flag - SVG</h2>
+        <svg width="450" height="300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Background -->
+            <rect width="450" height="300" stroke="black" stroke-width="1" fill="white" />
+
+            <!-- Red Sun -->
+            <circle cx="225" cy="150" r="90" fill="#BC002D" />
+        </svg>
+        <img src="img.svg" alt="Indian Flag">
+    </div>
+    <div>
+        <h2>Website Embedding</h2>
+    </div>
+    <div class="centre">
+
+        <iframe src="http://10.165.81.235:3000/Bookmark%20Website/bookmarkManager.html" width="300"
+            height="325"></iframe>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/zbt0l375YfE?si=XElIlCR1VN6we3J_&amp;start=2861"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h2>Semantic HTML</h2>
+        <img src="Semantic HTML.png" alt="Semantic HTML">
+    </div>
+    <div>
+        <h2>
+            HTML Boilerplate
+        </h2>
+        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </pre>
+    </div>
+</body>
+
+</html>
