@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <style>
+        li {
+            background-color: red;
+            color: yellow;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Introduction to CSS</h1>
+    <div>
+        <h2>
+            Three Ways to add CSS to HTML
+        </h2>
+        <ol>
+            <li style="color: black; background-color: antiquewhite;">Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+            <!-- <i>Precedence - which one is given at last</i> -->
+        </ol>
+    </div>
+    <div>
+        <h2>CSS Selectors</h2>
+        <ol>
+            <li>Element Selector</li>
+            <li class="darksalmon">Class selector</li>
+            <li data-x="a">Attribute Selector</li>
+            <li id="aqua">Id Selector</li>
+            <li>Child Selector</li>
+            <li>Descendant Selector</li>
+            <li>Universal Selector</li>
+            <li>Pseudo Selector</li>
+            <a target="blank" href="https://www.google.com">Google</a>
+            <a target="blank" href="https://www.coding,com">XYZ</a>
+            <!-- <i>Precedence - which one is given at last</i> -->
+        </ol>
+    </div>
+    <div>
+        <h2>CSS Box Model</h2>
+        <p class="box1">Box 1</p>
+        <!-- Box 1 px is applied btw the gap as an union of the both the px due to margin collapse -->
+        <p class="box2">Box 2</p>
+    </div>
+    <div>
+        <h2 class="heading">cSS fonts</h2>
+        <p class="paragraph">different types of font family</p>
+        <p class="paragraph font2">trying many other fonts styles</p>
+    </div>
+    <div>
+        <h2 class="heading">
+            cSS colors
+        </h2>
+        <ol type="i" class="font2">
+            <li class="colorKeywords">Color keywords</li>
+            <li class="hexColorCode">Hex Color Code</li>
+            <li class="rgb">RGB</li>
+            <li class="rgba">RGBA</li>
+            <li class="hsl">HSL</li>
+        </ol>
+    </div>
+    <div>
+        <h2 class="heading">
+            cSS specificity
+        </h2>
+        <ul class="font2">
+            <li>Universal selector : 0</li>
+            <li>Element selectors and pseudo-elements : 1</li>
+            <li>Class selectors, attribute selectors, and pseudo-classes : 10</li>
+            <li>ID Selectors : 100</li>
+            <li>Inline Styles : 1000</li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="heading">cSS sizing units</h2>
+        <ul class="font2">
+            <li class="px">px</li>
+            <li class="vw">vw</li>
+            <li class="vh">vh</li>
+            <li class="em">em</li>
+            <li class="rem">rem</li>
+            <li class="vmin">vmin</li>
+            <li class="vmax">vmax</li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="heading">cSS display property</h2>
+        <span class="font2 displayProperty">box</span>
+    </div>
+    <div>
+        <h2 class="heading">cSS shadows and outlines</h2>
+        <div class="font2 shadows">Shadows</div>
+        <div class="font2 outline">Outlines</div>
+    </div>
+    <div>
+        <h2 class="heading">CSS lists</h2>
+        <nav>
+            <ul class="font2">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h2 class="heading">Overflow Property</h2>
+        <p class="font2 box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet voluptatem
+            veritatis officiis tempore iste laborum minus vel similique sint libero tenetur nam distinctio beatae non
+            praesentium rem magnam sed, consequatur reprehenderit accusamus. Et neque dolores ad nihil officia adipisci
+            vitae doloribus incidunt repellendus maiores!</p>
+    </div>
+    <div>
+        <h2 class="heading">CSS position property</h2>
+        <div class="boxParent">
+            <div class="Abox box01"></div>
+            <div class="Abox box02"></div>
+            <div class="Abox box03"></div>
+            <div class="Abox box04"></div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS variables</h2>
+        <div class="font2 local">local variable</div>
+        <div class="font2 global">global variable</div>
+        <div class="font2 varNotFound">variable not declared</div>
+    </div>
+    <div>
+        <h2 class="heading ">CSS media query</h2>
+        <div class="mediaQuery">
+            <div class="mediaQuery1"></div>
+            <div class="mediaQuery2"></div>
+            <div class="mediaQuery3"></div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">cSS float & clear</h2>
+        <div class="fnc">
+            <img width="250"
+                src="https://imgs.search.brave.com/EP93DtiS0j-EG73uMaRrESF2_SgvepoWBbtjCTbbVFc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L3ByZW1pdW0tcGhv/dG8vbmF0dXJhbC1z/Y2VuZXJ5LXNjZW5p/Y3MtbmF0dXJlLWJl/YXV0aWZ1bC1zY2Vu/ZXJ5LWltYWdlcy1z/Y2VuZXJ5LWJlYXV0/aWZ1bC1zY2VuZXJ5/XzExMDY5MzktMTU5/NzE0LmpwZz9nYT1H/QTEuMS4yMDk4ODM0/ODE4LjE3ODQwODMx/NDgmc2VtdD1haXNf/aHlicmlkJnc9NzQw/JnE9ODA"
+                alt="scenery">
+            <div class="content font2">The sun bleeds gold across the ridge,
+                stitching shadow to the hillside's edge.
+                A river hums a low, blue tune
+                beneath the canopy of green.
+                Wind combs the grass in silver streaks,
+                and the sky holds its breath—
+                endless, and a little too close,
+                as if the clouds might kneel
+                and press their palms against the earth.</div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS flexbox</h2>
+        <div class="flexmainbox">
+            <div class="flexbox order1">1</div>
+            <div class="flexbox order2">2</div>
+            <div class="flexbox order3">3</div>
+            <div class="flexbox">4</div>
+            <div class="flexbox">5</div>
+            <div class="flexbox">6</div>
+            <div class="flexbox">7</div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS Grid</h2>
+        <div class="gridmain">
+            <div class="grid item-1">1</div>
+            <div class="grid item-2">2</div>
+            <div class="grid item-3">3</div>
+            <div class="grid item-4">4</div>
+            <div class="grid item-5">5</div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS Transforms</h2>
+        <div class="transforms-main">
+            <div class="transforms-box font2">
+                Box
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS transition</h2>
+        <div class="transition-container">
+            <div class="transition-element transforms-box"></div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS animations</h2>
+        <div class="animation-container">
+            <div class="animation-element"></div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS Object-fit & Object-cover</h2>
+        <div>
+            <div class="img-container">
+                <!-- <img src="https://imgs.search.brave.com/eE83e926vHv1VmEX3g_Wx_W-Xr0yV3GEwi85njP8IGQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTAy/OTc2NTg0NC9waG90/by9jaGVzc2JvYXJk/LXdpdGgtYS1jaGVz/cy1waWVjZS1vbi10/aGUtYmFjay1uZWdv/dGlhdGluZy1pbi1i/dXNpbmVzcy1hcy1i/YWNrZ3JvdW5kLWJ1/c2luZXNzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1naVZk/OHBIWWh2NnRVcDRV/STZjeTdUVTY5U0ts/MFFhUUhPZ1ZJdmFn/XzlBPQ" alt="chess img"> -->
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="heading">CSS Filters</h2>
+        <div class="img-filters-container">
+            <img src="https://imgs.search.brave.com/DTDnrrbgxhc2RMBVJRMoCsSDowmVzQixkKUpxGSPKSI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/bWFnbmlmaWMuY29t/L2ZyZWUtdmVjdG9y/L2hhbmQtZHJhd24t/ZmxhdC1kZXNpZ24t/c3Vkb2t1XzIzLTIx/NDkyODEyMjUuanBn/P2dhPUdBMS4xLjE1/NTYwODAyNDAuMTc5/MjU1MjE0NSZzZW10/PWFpc19oeWJyaWQm/dz03NDAmcT04MA" alt="imgOfsudoku">
+        </div>
+    </div>
+</body>
+
+</html>

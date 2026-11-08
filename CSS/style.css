@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Sriracha&display=swap');
+
+li {
+    background-color: aquamarine;
+    color: black;
+}
+
+.darksalmon {
+    background-color: darksalmon;
+}
+
+[data-x=a] {
+    background-color: burlywood;
+}
+
+#aqua {
+    background-color: aqua;
+}
+
+div>ol>li {
+    background-color: aliceblue;
+}
+
+div li {
+    background-color: beige;
+}
+
+* {
+    padding: 1;
+    /* px */
+    margin: 1;
+}
+
+/*Pseudo Selector*/
+a:visited {
+    color: rgb(35, 136, 103);
+}
+
+a:link {
+    color: rgb(60, 100, 113);
+}
+
+a:active {
+    color: cadetblue;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+li:first-child {
+    background-color: lightcoral;
+}
+
+.box1 {
+    background-color: azure;
+    padding: 2px;
+    margin: 4px;
+    /*its px is applied due to margin collapse*/
+    border: 2px solid black;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    background-color: azure;
+    padding: 2px;
+    margin: 2px;
+    border: 2px solid black;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.paragraph {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration:underline; */
+    font-family: "Edu QLD Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 9px;
+    letter-spacing: 1px;
+    /* text-decoration-color: antiquewhite; */
+    /* text-decoration-style: dashed; */
+    /* text-decoration-thickness:7px ; */
+    text-indent: 40px;
+    /* word-break: break-all;
+    border: 2px solid black; */
+    /* width: 50px; */
+
+}
+
+.font2 {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.heading {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.colorKeywords {
+    background-color: lightblue;
+}
+
+/* precendence - child over class */
+.hexColorCode {
+    background-color: #ADD8E6;
+}
+
+.rgb {
+    background-color: rgb(173, 216, 230)
+}
+
+.rgba {
+    background-color: rgb(173 216 230 / 1);
+}
+
+.hsl {
+    background-color: hsl(195, 53%, 79%);
+}
+
+/*The Specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41*/
+a.harryclass.rohan-class[href]:hover {
+    color: blueviolet;
+}
+
+.px {
+    box-sizing: border-box;
+    border: 2px solid coral;
+    width: 100px;
+}
+
+.vw {
+    box-sizing: border-box;
+    border: 2px solid blanchedalmond;
+    width: 80vw;
+    margin-top: 10px;
+}
+
+.vh {
+    box-sizing: border-box;
+    border: 2px solid blanchedalmond;
+    height: 10vh;
+    margin: 10px auto;
+}
+
+.em {
+    font-size: 1.5em;
+    /*from value of font size of the parent element(here as i import font style) i.e ??px*/
+    margin-bottom: 10px;
+}
+
+.rem {
+    font-size: 1.5rem;
+    /*from root value of font size i.e 16px*/
+    margin-bottom: 10px;
+}
+
+.vmin {
+    font-size: 3vmin;
+    margin-bottom: 10px;
+    border: 2px solid blanchedalmond;
+    /*for this device vmin = vh*/
+}
+
+.vmax {
+    font-size: 3vmax;
+    border: 2px solid blanchedalmond;
+    /*for this device vmax = vw*/
+    margin-bottom: 10px;
+}
+
+.displayProperty {
+    border: 2px solid black;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    margin: 20px;
+    margin-top: 0px;
+    /* display: none; */
+    /* visibility: hidden; */
+    display: flex;
+    justify-content: center;
+}
+
+.shadows {
+    border: 2px solid black;
+    padding: 4px;
+    box-shadow: 5px 10px 15px grey;
+    text-shadow: 3px 6px 14px black;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+.outline {
+    padding: 4px;
+    border: 2px solid black;
+    outline: 2px solid gray;
+    border-radius: 12px;
+    /* outline-offset: 2px; */
+}
+
+nav ul li {
+    list-style: lower-roman;
+    list-style-type: "$";
+    /*image also with url*/
+    background-color: aliceblue;
+    /* list-style-position: inside; */
+    list-style: disc inside;
+}
+
+.box {
+    width: 30vw;
+    height: 30vh;
+    border: 2px solid black;
+    /* overflow:scroll; */
+    overflow: hidden auto;
+    /* white-space: nowrap; */
+    /* text-overflow:ellipsis; */
+    /* overflow: hidden; */
+    /*overflow:clip;*/
+    padding: 4px;
+}
+
+.Abox {
+    height: 100px;
+    width: 80vw;
+    padding: 4px;
+    margin: 4px;
+    border: 2px solid black;
+}
+
+.box01 {
+    background-color: aliceblue;
+    /* position: relative; */
+    /* z-index: 1; */
+    /* position: absolute;
+    top: 0px;  */
+    /* realtive to parent if parent is positioned, with exception in transform,filter and perspective property with aren't position but work as same as positioned */
+    /* position: sticky; */
+    /* top: 0px; */
+}
+
+.box02 {
+    background-color: antiquewhite;
+    position: relative;
+    top: -50px;
+    left: 50px;
+    z-index: 1;
+}
+
+.box03 {
+    background-color: aqua;
+    /* position:fixed;
+    bottom:0px;
+    height: 20px; */
+    position: relative;
+    top: -100px;
+}
+
+.box04 {
+    background-color: aquamarine;
+    position: relative;
+    top: -150px;
+    left: 50px;
+}
+
+.boxParent {
+    padding: 2px;
+    border: 2px solid black;
+    /* position: absolute; */
+    position: relative;
+}
+
+:root {
+    --rainbowC1: red;
+    --rainbowC2: orange;
+    --rainbowC3: yellow;
+    --rainbowC4: green;
+    --rainbowC5: blue;
+    --rainbowC6: indigo;
+    --rainbowC7: violet;
+    --defpad: 5px;
+    --defmar: 10px;
+}
+
+.local {
+    --rainbowC7: rgb(230, 190, 229);
+    background-color: var(--rainbowC7);
+    padding-left: var(--defpad);
+    margin-bottom: var(--defmar);
+}
+
+.global {
+    background-color: var(--rainbowC7);
+    padding-left: var(--defpad);
+    margin-bottom: var(--defmar);
+}
+
+.varNotFound {
+    background-color: var(--rainbowC8, antiquewhite);
+    padding-left: var(--defpad);
+}
+.mediaQuery{
+    display: flex;
+}
+.mediaQuery1 {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.mediaQuery2 {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: var(--defmar);
+}
+.mediaQuery3 {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: var(--defmar);
+}
+
+/* @media screen and (max-width : 455px) { */
+@media screen and (orientation: portrait) {
+    .mediaQuery{
+        flex-direction: column;
+    }
+}
+.fnc img{
+    float: right;
+    border-radius: 10px
+}
+.content{
+    clear: left;
+}
+/* ::selection{
+    color: rgb(216, 62, 62);
+    background-color: rgb(0, 0, 0);
+} */
+.flexmainbox{
+    border: 2px solid rgb(0, 0, 0);
+    display :flex;
+    height: 50vh;
+    justify-content:center;
+    align-items: center ;
+    /* flex-direction:column-reverse; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    /*for more than one lines*/
+    /* flex-flow:row wrap; */
+    gap: 5px;
+    /* row-gap: 40px;
+    column-gap: 10px; */
+    /* gap: 40px 10px; */
+    /* align-items: baseline; */
+}
+.flexbox{
+    width:75px;
+    height: 75px;
+    background-color:blueviolet;
+    border: 2px solid black;
+    /* margin: 4px; */
+    /* align-content: center; */
+    /* flex-grow: 1; */
+}
+.order1{
+    order: -1;
+    /* flex-grow:2; */
+    /* default order is 0 */
+}
+.order2{
+    /* order :1; */
+    flex-shrink: 5;
+}
+.order3{
+    /* align-self:flex-start; */
+   align-self:center;
+}
+.gridmain{
+    border: 2px solid black;
+    display:grid;
+    /* grid-template-columns: [pehla]100px [dusra]40px [tesra];
+    grid-template-rows: 100px 100px; */
+    /* grid-template-areas: "nav nav nav" "side article article" "footer footer footer"; */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* height: 40vh; */
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-rows: repeat(2, minmax(100px,1fr));
+    gap: 10px 44px;
+    justify-items: center;
+    align-items: center;
+    place-content: center;
+}
+.grid{
+    border: 2px solid rgba(0, 0, 0, 0.250);
+    /* width:50px; */
+    height:50px;
+    width: 100px;
+    background-color: blanchedalmond;
+} 
+/* .item-4{
+    grid-row:1/2;
+    grid-column:1/2;
+} */
+
+/* .item-1{
+    /* grid-row-start:1;
+    grid-column-start:1;
+    grid-row-end:2;
+    grid-column-end:2; */
+    /* as same as */
+    /* grid-row:1/2;
+    grid-column:pehla/dusra;
+} */
+/*.item-2{
+    grid-area: side;
+    background-color: aliceblue;
+}
+.item-3{
+    grid-area: article;
+    background-color: rgb(221, 215, 250);
+}
+.item-4{
+    grid-area: footer;
+    background-color: aqua;
+}
+.item-5{
+    grid-area: nav;
+    background-color: aquamarine;
+} */
+.transforms-main{
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+}
+.transforms-box{
+    border: 2px solid rgba(0, 0, 0, 0.250);
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: rotate(90deg); */
+    /* (as same as) */
+    /* transform: rotate(.25turn); */
+    /* transform:rotateX(45deg); */
+    /* transform:rotateY(45deg); */
+    transform:rotateZ(45deg);
+    /* transform:scaleX(1.25); */
+    /* transform:  */
+    /* transform: translatex(100px) translatey(100px); */
+    transform-origin: 50% 190%; /*rotate about different point of origin */
+}
+.transition-container{
+    height: 400px;
+    border: 2px solid black;
+    background-color: beige;
+}
+.transition-element{
+    height: 200px;
+    width: 200px;
+    border:1px solid rgba(0, 0, 0, 0.25);
+    background-color: blanchedalmond;
+    /* transition-property: transform; all or color, transform
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1; */
+    /* is as same as  */
+    transition: all 3s ease-in-out 1s;
+}
+.animation-container{
+    height: 400px;
+    border: 2px solid black;
+    background-color: rgba(245, 245, 220, 0.464);
+}
+.animation-element{
+    height: 200px;
+    width: 200px;
+    border:1px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 235, 205, 0.39);
+    /* animation: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-delay: 30s;
+    animation-direction: alternate-reverse;
+    animation-play-state: running; 
+    animation-fill-mode: backward; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: animation 5s ease-in-out  3s 2 alternate-reverse forwards,
+            rotation 5s ease-in 3s 2 alternate-reverse;
+}
+@keyframes animation {
+    from{
+        background-color: aquamarine;
+    }
+    to{
+        transform: translatex(100px) translatey(100px);
+        background-color: blueviolet;
+    }
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(90deg);
+    }
+    20%{
+        transform: rotate(150deg);
+    }
+    50%{
+        transform: rotate(200deg);
+    }
+    80%{
+        transform: rotate(300deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.img-container{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    /* background-color: rgba(0, 0, 0, 0.253); */
+    background-position: top left;
+    background-image: url("https://imgs.search.brave.com/eE83e926vHv1VmEX3g_Wx_W-Xr0yV3GEwi85njP8IGQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTAy/OTc2NTg0NC9waG90/by9jaGVzc2JvYXJk/LXdpdGgtYS1jaGVz/cy1waWVjZS1vbi10/aGUtYmFjay1uZWdv/dGlhdGluZy1pbi1i/dXNpbmVzcy1hcy1i/YWNrZ3JvdW5kLWJ1/c2luZXNzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1naVZk/OHBIWWh2NnRVcDRV/STZjeTdUVTY5U0ts/MFFhUUhPZ1ZJdmFn/XzlBPQ");
+    /* background-repeat: no-repeat; */
+    /* background-color: border-box; */
+}
+.img-container img{
+    height: 400px;
+    width: 400px;
+    
+    object-fit: cover;
+    /* object-position: top left; */
+    /* object-position: 20px 50px; */
+    /* object-fit: contain; */
+    /* object-fit: fill; */
+    /* object-fit:scale-down; */
+}
+.img-filters-container{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+.img-filters-container img{
+    height: 400px;
+    width: 400px;
+    
+    /* filter: blur(10px); */
+    filter: brightness(150%) contrast(70%) grayscale(70%) sepia(20%);
+    filter: invert(1) opacity(1);
+}
