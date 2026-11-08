@@ -1,0 +1,29 @@
+
+:root{
+    --navbarcolor:rgb(215, 97, 120);
+    --websitecolor:rgb(202, 147, 174);
+    --barscolor:rgb(0, 1, 2);
+    --hovercolor:rgb(214, 73, 89);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--websitecolor);
+}
+.navbar{
+    background-color: var(--navbarcolor);
+    list-style:none;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    font-size:20px;
+}
+li a{
+    text-decoration: none;
+    color:var(--barscolor);
+}
+a:hover{
+    background-color:var(--hovercolor);
+    border-radius: 10px;
+}

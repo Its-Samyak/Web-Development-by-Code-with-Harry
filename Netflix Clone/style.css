@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* outline: 1px solid red; */
+}
+
+.firstbox {
+    background-image: url(Assets/BackgroundImageNetflix.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blackshadowbox {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav span img {
+    position: relative;
+    z-index: 1;
+    height: 40px;
+}
+
+nav {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.langButton {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    height: 32px;
+    width: 120px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.SignInButton {
+    background-color: red;
+    color: white;
+    height: 32px;
+    width: 75px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 150px;
+}
+
+.heading {
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.middle {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 0 20px 0;
+}
+
+.lower {
+    font-size: 17px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.lowerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: auto;
+    gap: 10px;
+}
+
+.emailButton {
+    width: 375px;
+    height: 55px;
+    background-color: rgba(28, 27, 27, 0.8);
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    padding-left: 20px;
+}
+
+.startingButton {
+    width: 200px;
+    height: 55px;
+    background-color: red;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    z-index: 1;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-overflow: clip;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+input {
+    color: white;
+}
+
+main {
+    background-color: black;
+    border-top: 5px solid rgba(171, 15, 46, 0.732);
+}
+
+.mainTop {
+    width: 80vw;
+    margin: auto;
+}
+
+.TrendingTag {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 30px 0 20px 0;
+}
+
+.posters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.posters div {
+    width: 200px;
+    height: 300px;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    font-size: 100px;
+    font-weight: bolder;
+    color: black;
+    -webkit-text-stroke: 1px white;
+
+}
+
+.posters div:hover {
+    transform: scale(1.03, 1.03);
+
+}
+
+.posters div:nth-child(1) {
+    background-image: url("https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABfkfzxoNRUrAasNcAz0XvNCAiCt-2w5M6o-td9NWkj_2Us9t3y2yGzhG4lx4U3jkK0xb0au62tX0Fm-1PBdvrH51-jWzQZk_KrA.webp?r=4d1");
+}
+
+.posters div:nth-child(2) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABYqXetRIK5Y_xKlAuNEu3MZVT_w1F2ChhjHRsvKtCVVPa9hEtUGmZq3_E7tt415Alc4WtV_1KZuQnYTRgM5ipt6JxhgwPDTTfq8xODnqbeO7595p_3RHTz4N0zcCXTulITgv.webp?r=aa6)
+}
+
+.posters div:nth-child(3) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABe3fxY63IAX9AP8HmXoCF16d8mlEedOGzcUEwG3v6ciImpJNxntsKRtAARX5LMJ2_cBU9cmWgdDxRoZpA_WerZBXWA3O32H_6V8.webp?r=992)
+}
+
+.posters div:nth-child(4) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABS6Z6i2AXOHPJTBTIp5COCdZN92bY9RKKgU_30Zxt-gdL5JU0pOrmbGaZstzllsuauB1UHW4OGpR0bJQA6RUfyx26UMgMvupBCY.webp?r=dd2)
+}
+
+.posters div:nth-child(5) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABWG24jVWSlsY7DRoH3L4WZxjEovetlu2pHRF6VhMTrMT3lEFSbDEonWftbOPHLw5YC5fta1RkornrSws2RxYueSSunjHfKZN2ds.webp?r=3ce)
+}
+
+.posters div:nth-child(6) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABZHnwfqphE_z6ZvQKfENixW2pkbXM14EGKgVu0f8RpJKohGGFacLjtelLGco2BcO4IGCo8rEtxkCRpskMWWCc9etJIFauuEuxUcIDqmDyCwFurmQF9hdXTKzoM1Vf938CsP1.webp?r=aa9)
+}
+
+.posters div:nth-child(7) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABSNbHcwj0eppGAGpfKcex4TLilLiQRIMqsizhoPfljN0OX-l4dNnyzflK65vfkab0Sd3mUgBWCoHQq3PsYmE8oFQ-54GUalcRgmFupnG9MgCLW4AOrj3wcqjAqozMmF1LGZe.webp?r=c47)
+}
+
+.posters div:nth-child(8) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABZ0iJA9jmbacgYS-dMZdzgK6X2578Ufkfn7CtCKwEQMkkuUmtavsOyVPHJEUuM5BDX9jkCxeOKgyRnro8Y0GVfqHo_dGACXd098.webp?r=655)
+}
+
+.posters div:nth-child(9) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABTcmHkWV1teHHo1pDTMKec570uKFhGe1Q641J21suhWwoVbcf_mK88WG-P0sxHZvib8Z5YmzluZUflcyLZQHNsu60ogMEbAHUfQ.webp?r=0a1)
+}
+
+.posters div:nth-child(10) {
+    background-image: url(https://occ-0-3646-3647.1.nflxso.net/dnm/api/v6/_YyUT33Ze3kFXjMydIZFIm6ajHk/AAAABSD6qi_qtMcua5XsILc4GoVGY08oHPHy9HE94BeA8KN6Qv1b6_WE1_NbTLWYdL1fBEVOXOxL3NmR0steUKCZGb5zObGA23aWGVs.webp?r=388)
+}
+
+.posters div span {
+    margin: 0px 0px 0px -21px;
+}
+
+.reasonTag {
+    padding-top: 75px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.reasonsbox {
+    width: 300px;
+    height: 275px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #192247 0%, #210E17 100%);
+}
+
+.resonsHeader {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0 10px 10px;
+}
+
+.reasonsContent {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px;
+    font-size: 18px;
+}
+
+.reasonsImg {
+    align-self: flex-end;
+    margin: 30px 10px 0 0;
+}
+
+.reasonImg2 {
+    margin: 10px 10px;
+}
+
+.reasonImg4 {
+    margin: 1px 10px;
+}
+
+.faqGrid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.faqGrid div {
+    color: white;
+    width: 80vw;
+    height: 80px;
+    background-color: rgba(128, 128, 128, 0.373);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.faqGrid div span{
+   margin-left: 20px;
+}
+.faqGrid div svg{
+    margin-right: 20px;
+}
+.faqGrid div:hover{
+    background-color: rgba(128, 128, 128, 0.6);
+}
+.mainBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newLower{
+    margin: 65px 0 0 0;
+}
+.questions {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 75px 0 50px 0;
+    align-self: flex-start;
+}
+a{
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}
+.newEmailButton {
+    width: 600px;
+    background-color: rgba(15, 15, 15, 0.8);
+}
+
+.newLowerSection {
+    max-width: 1000px;
+}
+
+.faqHref {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.hrefs {
+    width: 50pxpx;
+    height: 20px;
+    font-size: 15px;
+}
+
+.newLangButton {
+    background-color: rgba(21, 21, 21, 0.8);
+    margin: 60px 0 35px 0;
+}
+
+.secondLastLine {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+}
+
+.lastLine {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    margin: 30px 0 88px 0;
+}
+@media screen and (max-width:960px) and (orientation: portrait) {
+    .lowerSection {
+        flex-direction: column;
+        /* max-width: 80vw; */
+    }
+
+    .emailButton {
+        max-width: 375px;
+        width: 70vw;
+    }
+
+    .startingButton {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .firstbox,
+    .blackshadowbox {
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .heading {
+        font-size: 42px;
+    }
+
+    .lower {
+        font-size: 11px;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .reasonsbox{
+        width: 200px;
+    }
+    .reasonsImg{
+       display: none;
+    }
+    .faqGrid div{
+        max-width: 60vw;
+    }
+    .faqHref{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:500px){
+    .posters{
+        grid-template-columns: 1fr ;
+    }
+    .reasons{
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media screen and (max-width:766px) and (min-width:500px){
+    .posters{
+        grid-template-columns: 1fr 1fr;
+    }
+    .reasons{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:1030px) and (min-width:766px){
+    .posters{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .reasons{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:1300px) and (min-width:1030px){
+    .posters{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:1500px) and (min-width:1030px){
+    .reasons{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:950px) and (min-width:350px){
+    .newEmailButton{
+        max-width: 40vw;
+    }
+    .newStartingButton{
+        max-width: 150px;
+    }
+}

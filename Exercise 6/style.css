@@ -1,0 +1,29 @@
+nav ul{
+    list-style: none;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+ul{
+    border: 1px solid rgb(0,0,0,0.100);
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 10vw;
+}
+.outermost{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+nav ul li:first-child{
+    margin-right: 30vw;
+    font-size:xx-large;
+    margin-top: 0;
+}
